@@ -11,6 +11,7 @@ public class RaycastArts : MonoBehaviour
 
     public AudioSource Player;
 
+<<<<<<< Updated upstream
     public AudioClip Исаев;
     public AudioClip Бакст;
     public AudioClip Бархатков;
@@ -24,6 +25,14 @@ public class RaycastArts : MonoBehaviour
     public AudioClip Батальонок;
     public AudioClip Сазонов;
     public AudioClip Шагал;
+=======
+    public AudioClip audio1;
+    public AudioClip audio2;
+    public AudioClip audio3;
+    public AudioClip audio4;
+    public AudioClip audio5;
+    public AudioClip audio6;
+>>>>>>> Stashed changes
 
 
     private void Awake()
@@ -41,16 +50,16 @@ public class RaycastArts : MonoBehaviour
             switch (hit.collider.gameObject.name)
             {
                 case "door":
-                    CanvasText.text = "Hажмите <color=orange>Е</color> для того чтобы выйти на главную сцену";
+                    CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=orange>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         SceneManager.LoadScene("GameScene");
                     }
                     break;
-                case "Александр Исачев - Автопортрет":
+                case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -58,19 +67,23 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
+<<<<<<< Updated upstream
                             Player.clip = Исаев;
+=======
+                            Player.clip = audio1;
+>>>>>>> Stashed changes
                             Player.Play();
                         }
                     }
                     
                     break;
-                case "Витольд Бялыницкий-Бируля - Зимний сон":
+                case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -78,18 +91,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бируля;
+                            Player.clip = audio2;
                             Player.Play();
                         }
                     }
                     break;
-                case "Егор Батальонок - романтический пейзаж":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -97,18 +110,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Батальонок;
+                            Player.clip = audio3;
                             Player.Play();
                         }
                     }
                     break;
-                case "Иван Хруцкий - Портрет неизвестной с цветами и фруктами":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -116,18 +129,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Хруцкий;
+                            Player.clip = audio4;
                             Player.Play();
                         }
                     }
                     break;
-                case "Игорь Бархатков - борьба за реализм":
+                case "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -135,18 +148,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бархатков;
+                            Player.clip = audio5;
                             Player.Play();
                         }
                     }
                     break;
-                case "Лев Бакст - Русские сезоны":
+                case "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -154,18 +167,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бакст;
+                            Player.clip = audio6;
                             Player.Play();
                         }
                     }
                     break;
-                case "Лев Бакст - Русские сезоны 2":
+                case "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 2":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -173,18 +186,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бакст;
+                            Player.clip = audio1;
                             Player.Play();
                         }
                     }
                     break;
-                case "Лев Бакст - Русские сезоны 3":
+                case "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ 3":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -192,18 +205,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бакст;
+                            Player.clip = audio3;
                             Player.Play();
                         }
                     }
                     break;
-                case "Николай Бущик - у нас не любят состояние радости":
+                case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -211,18 +224,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Бущиков;
+                            Player.clip = audio2;
                             Player.Play();
                         }
                     }
                     break;
-                case "Наполеон Орда - Несвижский замок Радзивиллов":
+                case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -230,18 +243,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Орда;
+                            Player.clip = audio1;
                             Player.Play();
                         }
                     }
                     break;
-                case "Василий Сазонов - Куликовское поле":
+                case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -249,18 +262,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Сазонов;
+                            Player.clip = audio2;
                             Player.Play();
                         }
                     }
                     break;
-                case "Язэп Дроздович - Космос":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -268,18 +281,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Язеп;
+                            Player.clip = audio1;
                             Player.Play();
                         }
                     }
                     break;
-                case "Хаим Сутин - Ева":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -287,18 +300,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Сутин;
+                            Player.clip = audio5;
                             Player.Play();
                         }
                     }
                     break;
-                case "Марк Шагал - Прогулка над городом":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -306,18 +319,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Шагал;
+                            Player.clip = audio6;
                             Player.Play();
                         }
                     }
                     break;
-                case "Марк Шагал - Прогулка":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -325,18 +338,18 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Шагал;
+                            Player.clip = audio2;
                             Player.Play();
                         }
                     }
                     break;
-                case "Марк Шагал - Двойной портрет":
+                case "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
                     if (Player.isPlaying)
                     {
-                        CanvasText.text = "Hажмите <color=red>Е</color> чтобы остановить гида";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             Player.Stop();
@@ -344,10 +357,10 @@ public class RaycastArts : MonoBehaviour
                     }
                     else
                     {
-                        CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
+                        CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Шагал;
+                            Player.clip = audio1;
                             Player.Play();
                         }
                     }

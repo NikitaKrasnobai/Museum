@@ -122,9 +122,15 @@
       }
     },
     "com.unity.render-pipelines.high-definition-config": {
+<<<<<<< Updated upstream
       "version": "14.0.11",
       "depth": 1,
       "source": "builtin",
+=======
+      "version": "file:com.unity.render-pipelines.high-definition-config",
+      "depth": 0,
+      "source": "embedded",
+>>>>>>> Stashed changes
       "dependencies": {
         "com.unity.render-pipelines.core": "14.0.11"
       }

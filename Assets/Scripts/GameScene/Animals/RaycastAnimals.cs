@@ -12,12 +12,21 @@ public class RaycastAnimals : MonoBehaviour
 
     public AudioSource Player;
 
+<<<<<<< Updated upstream
     public AudioClip Гомель;
     public AudioClip Брест;
     public AudioClip Витебск;
     public AudioClip Могилв;
     public AudioClip Минск;
     public AudioClip Гродно;
+=======
+    public AudioClip audio1;
+    public AudioClip audio2;
+    public AudioClip audio3;
+    public AudioClip audio4;
+    public AudioClip audio5;
+    public AudioClip audio6;
+>>>>>>> Stashed changes
 
     private void Awake()
     {
@@ -38,8 +47,8 @@ public class RaycastAnimals : MonoBehaviour
 
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Hажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания рассказа о Гродненской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -54,7 +63,7 @@ public class RaycastAnimals : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.E))
                             {
-                                Player.clip = Гродно;
+                                Player.clip = audio1;
                                 Player.Play();
                             }
                         }
@@ -65,8 +74,8 @@ public class RaycastAnimals : MonoBehaviour
 
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Нажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Нажмите <color=green>Е</color> для прослушивания рассказа о Брестской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -81,7 +90,7 @@ public class RaycastAnimals : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.E))
                             {
-                                    Player.clip = Брест;
+                                    Player.clip = audio2;
                                     Player.Play();
                             }
                         }
@@ -92,8 +101,8 @@ public class RaycastAnimals : MonoBehaviour
 
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Hажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания рассказа о Гомельской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E)) 
                     {
@@ -108,7 +117,7 @@ public class RaycastAnimals : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.E))
                             {
-                                Player.clip = Гомель;
+                                Player.clip = audio3;
                                 Player.Play();
                             }
                         }
@@ -119,8 +128,8 @@ public class RaycastAnimals : MonoBehaviour
 
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Hажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания рассказа о Могилёвской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E)) 
                     {
@@ -135,7 +144,11 @@ public class RaycastAnimals : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.E))
                             {
+<<<<<<< Updated upstream
                                 Player.clip = Могилв;
+=======
+                                Player.clip = audio4;
+>>>>>>> Stashed changes
                                 Player.Play();
                             }
                         }
@@ -146,8 +159,8 @@ public class RaycastAnimals : MonoBehaviour
                 case "Fox":
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Hажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания рассказа о Минской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E)) 
                     {
@@ -165,7 +178,7 @@ public class RaycastAnimals : MonoBehaviour
                             {
                                 if (Input.GetKeyDown(KeyCode.E))
                                 {
-                                    Player.clip = Минск;
+                                    Player.clip = audio5;
                                     Player.Play();
                                 }
                             }
@@ -177,8 +190,8 @@ public class RaycastAnimals : MonoBehaviour
                 case "Bunny":
                     AnimalAnimator = hit.collider.transform.GetComponent<Animator>();
 
-                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "Hажмите <color=red>Е</color> для прекращения прослушивания рассказа";
-                    else CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания рассказа о Минской области";
+                    if (AnimalAnimator.GetBool("IsTalk")) CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=red>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+                    else CanvasText.text = "HпїЅпїЅпїЅпїЅпїЅпїЅ <color=green>пїЅ</color> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -195,7 +208,7 @@ public class RaycastAnimals : MonoBehaviour
                             {
                                 if (Input.GetKeyDown(KeyCode.E))
                                 {
-                                    Player.clip = Минск;
+                                    Player.clip = audio6;
                                     Player.Play();
                                 }
                             }
