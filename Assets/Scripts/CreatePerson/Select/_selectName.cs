@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -78,6 +79,7 @@ public class _selectName : MonoBehaviour
             if (item == _text.text.ToString())
             {
                 Debug.Log(_text.text.ToString());
+                AssetDatabase.Refresh();
                 GameObject player = Instantiate(Resources.Load("Person/" + _text.text)) as GameObject;
                 player.transform.localPosition = new Vector3(1, 3.5f, -22.4f);
                 player.transform.localRotation = new Quaternion(0, 90, 0, -90);

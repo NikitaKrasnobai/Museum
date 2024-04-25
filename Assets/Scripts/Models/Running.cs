@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class Running : MonoBehaviour
 {
@@ -39,8 +35,6 @@ public class Running : MonoBehaviour
         float Horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
 
         float Vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-
-        Debug.Log("ver " + Vertical + " hor " + Horizontal);
 
         if (Horizontal != 0 || Vertical != 0)
         {
