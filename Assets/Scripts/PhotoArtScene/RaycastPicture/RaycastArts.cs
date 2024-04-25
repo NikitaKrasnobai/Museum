@@ -11,7 +11,7 @@ public class RaycastArts : MonoBehaviour
 
     public AudioSource Player;
 
-    public AudioClip Исачев;
+    public AudioClip Исаев;
     public AudioClip Бакст;
     public AudioClip Бархатков;
     public AudioClip Бируля;
@@ -61,7 +61,7 @@ public class RaycastArts : MonoBehaviour
                         CanvasText.text = "Hажмите <color=green>Е</color> для прослушивания информации об авторе";
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            Player.clip = Исачев;
+                            Player.clip = Исаев;
                             Player.Play();
                         }
                     }

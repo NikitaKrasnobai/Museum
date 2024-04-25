@@ -15,7 +15,7 @@ public class RaycastAnimals : MonoBehaviour
     public AudioClip Гомель;
     public AudioClip Брест;
     public AudioClip Витебск;
-    public AudioClip Могилёв;
+    public AudioClip Могилв;
     public AudioClip Минск;
     public AudioClip Гродно;
 
@@ -135,7 +135,7 @@ public class RaycastAnimals : MonoBehaviour
                         {
                             if (Input.GetKeyDown(KeyCode.E))
                             {
-                                Player.clip = Могилёв;
+                                Player.clip = Могилв;
                                 Player.Play();
                             }
                         }
